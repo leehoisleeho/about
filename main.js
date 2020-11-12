@@ -8,16 +8,24 @@ let str = `/**大家好，你们可以叫我leeHo,我现在在学前端技术，
     border:1px solid red;
 }
 #input{
-    transform:rotateY(43deg)translateZ(20px);
-    height: 80vh;
+    // transform:rotateY(43deg)translateZ(20px);
+    height: 100vh;
 }
 /** 先放一张我的生活照 **/
+/** 创建一个容器放我的照片 **/
 .output_1{
-    border: 3px solid rgb(78, 78, 78);
+    border: 7px solid #3e7fee;
     border-radius: 50%;
     height: 200px;
     width: 200px;
     background-image: url(./img/1.jpg);
+    background-size: cover;
+}
+
+#output{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
 }
 `
 
@@ -36,7 +44,7 @@ function outPut(){
         }else{
     
         }    
-    },0);
+    },10);
 }
 outPut()
 
