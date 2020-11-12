@@ -1,21 +1,28 @@
 let str = `/**大家好，你们可以叫我leeHo,我现在在学前端技术，这个网站是我的学习笔记，我会把学到知识记录在这里，方便我回顾。
 我从前在一个国企当网络管理员，俗称网管，后来我辞职了，因为那并不是我喜欢的工作或者生活，在那里每天上班打卡，今天做着和昨天一样的事情，我厌倦了这样的工作，我想换一个自己喜欢的工作。所以我选择了前端程序员。
 下面我写一下我的简历
-1.放一张我自己的生活照 **/
-
-2.我的名字
-3.我的英文名
-4.我的学历
-5.我的毕业学习
-6.我的工作经历
-7.我现在掌握的前端技术
-8.我的邮箱
-9.我的微博
-10.我的Github
+现在是准备工作**/
+#output{
+    display:block;
+    width: 50%;
+    border:1px solid red;
+}
+#input{
+    transform:rotateY(43deg)translateZ(20px);
+    height: 80vh;
+}
+/** 先放一张我的生活照 **/
+.output_1{
+    border: 3px solid rgb(78, 78, 78);
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-image: url(./img/1.jpg);
+}
 `
-李涵屹
 
 let style = document.getElementById("style")
+console.log(style)
 let input  = document.getElementById("input")
 
 let n = -1
@@ -23,12 +30,13 @@ function outPut(){
     setTimeout(() => {
         n = n + 1
         if(n<=str.length){
-            html.innerhtml = str.substring(0,n)
+            style.innerText = str.substring(0,n)
+            input.innerText = str.substring(0,n)
             outPut()
         }else{
     
         }    
-    },100);
+    },0);
 }
 outPut()
 

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    display: flex;
+    perspective:2500px;
+    align-items: center;
+    height: 100vh;
+}
+#input{
+    width:50%;
+    height: 100vh;
+    padding: 10px 10px;
+    line-height: 1.5em;
+    font-size: 16px;
+    background: #272727;
+    color: #0ae10a;
+    font-family: monospace;
+    font-weight: 800;
+    transition: all 1s;
+}
+
+#output{
+    display: none;
+    height: 100vh;
+}
+
+
+
